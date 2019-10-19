@@ -37,7 +37,7 @@ body {
 
 h1, h2, h3 {
   font-weight: 300;
-  margin: 0px;
+  margin: 0 !important;
   line-height: 45px;
 }
 
@@ -77,4 +77,79 @@ p.lead {
   font-size: 18px;
   font-weight: 300px;
   line-height: 24px;
+}
+
+/* ==================
+  Layers
+======================*/
+
+.container {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+header {
+  background-color: #000000;
+}
+
+#logo {
+  display: block;
+  padding: 17px 0 17px 5px;
+  float: left;
+}
+
+#hero {
+  background-color: #00c0ff;
+}
+
+/* ==================
+  Navbar
+======================*/
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  float: right;
+}
+
+ul li {
+  list-style: none;
+  float: left;
+}
+
+header nav ul li a {
+  color: #ffffff;
+  padding: 20px;
+  border-left: 1px solid #333333;
+  display: block;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+header nav ul li a:hover {
+  background-color: #222222;
+}
+
+header nav ul li a:active {
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.8) inset;
+     -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.8) inset;
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.8) inset;;
+}
+
+/* ==================
+  Global
+======================*/
+
+.clearfix:before, .clearfix:after {
+  content: '';
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+  zoom: 1;
 }
